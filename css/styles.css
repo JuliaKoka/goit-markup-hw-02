@@ -15,28 +15,18 @@ a {
 
 /*======================HEADER==================*/
 
-.header-menu-item:hover,
-.header-menu-item:active {
-  color: var(--OCEAN, #404bbf);
-}
-
-.header-contacts-item:hover,
-.header-contacts-item:focus {
-  color: var(--OCEAN, #404bbf);
-}
-
 .header-logo {
-  color: var(--NAVY-BLUE, #2e2f42);
-  font-family: Raleway;
+  color: var(--IRIS, #4d5ae5);
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
 
-.header-logo span {
-  color: var(--IRIS, #4d5ae5);
+.header-span {
+  color: var(--NAVY-BLUE, #2e2f42);
 }
 
 .header-menu {
@@ -50,13 +40,27 @@ a {
 .header-menu-item {
 }
 
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: var(--OCEAN, #404bbf);
+}
+
 .header-contacts {
+}
+
+.header-contacts-list {
   font-size: 16px;
+  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
 
 .header-contacts-item {
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--OCEAN, #404bbf);
 }
 
 /*=================================================================*/
@@ -65,10 +69,6 @@ a {
 
 .hero {
   background: var(--NAVY-BLUE, #2e2f42);
-}
-
-.hero-btn:hover {
-  background: var(--OCEAN, #404bbf);
 }
 
 .hero-title {
@@ -80,15 +80,19 @@ a {
 }
 
 .hero-btn {
-  border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--WHITE, #fff);
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--OCEAN, #404bbf);
 }
 
 /*=================================================================*/
@@ -99,12 +103,8 @@ a {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
   margin: -1px;
   border: 0;
-  padding: 0;
 
   white-space: nowrap;
   clip-path: inset(100%);
@@ -217,17 +217,18 @@ a {
 }
 
 .footer-logo {
-  color: var(--CLOUD, #f4f4fd);
-  font-family: Raleway;
+  color: var(--IRIS, #4d5ae5);
+
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
 
-.footer-logo span {
-  color: var(--IRIS, #4d5ae5);
+.footer-span {
+  color: var(--CLOUD, #f4f4fd);
 }
 
 .footer-text {
